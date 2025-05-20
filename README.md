@@ -1,5 +1,7 @@
 query per creare le tabelle SQL:
 
+Nome database: sitophp
+
 -- Tabella utenti
 CREATE TABLE login (
     ID INT AUTO_INCREMENT PRIMARY KEY,
