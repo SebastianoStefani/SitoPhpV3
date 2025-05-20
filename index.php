@@ -16,8 +16,8 @@ $logged_in = isset($_SESSION['session_id']);
             <h1>S & the 3 Ms</h1>
             <nav>
                 <?php if (!$logged_in): ?>
-                    <a href="register.html"><button id="nav-register">Register</button></a>
-                    <a href="login.html"><button id="nav-login">Login</button></a>
+                    <a href="register.php"><button id="nav-register">Register</button></a>
+                    <a href="login.php"><button id="nav-login">Login</button></a>
                     <a href="theory.php"><button id="nav-theory" disabled>Teoria</button></a>
                     <a href="crypto.php"><button id="nav-theory" disabled>Cifrario di Cesare</button></a>
                     <a href="cronologia.php"><button id="nav-theory" disabled>Cronologia richieste</button></a>
@@ -37,10 +37,9 @@ $logged_in = isset($_SESSION['session_id']);
             <h2>Benvenuto!</h2>
             <p>
                 <?php if (!$logged_in): ?>
-                    Usa il men&ugrave; in alto per fare il login o registrarsi.
+                    Usa il men&ugrave; in alto per fare il <a href="login.php"> Login </a> o <a href="register.php">Registrarsi</a>.
                 <?php else: ?>
                     Sei loggato come <?php echo htmlspecialchars($_SESSION['session_user']);?> adesso puoi accedere alle pagine dal sito dal men&ugrave; in alto.
-                    <p>Il tuo session ID &egrave;: <?php echo htmlspecialchars($_SESSION['session_id']);?></p>
                 <?php endif; ?>
             </p>
             

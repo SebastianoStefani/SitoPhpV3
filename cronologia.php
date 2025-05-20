@@ -64,7 +64,9 @@ $errore = '';
             <h2>Cronologia richieste</h2>
             <p>Qui puoi vedere la cronologia delle tue richieste di cifratura e decifratura.</p>
             <div class="center-container">
-              <button type="submit" id="delete_all" onclick="return confirm('Sei sicuro di voler cancellare tutta la cronologia?');">Cancella tutta la cronologia</button>
+              <form method="post" style="display:inline;">
+                <button type="submit" id="delete_all" name="delete_all" onclick="return confirm('Sei sicuro di voler cancellare tutta la cronologia?');">Cancella tutta la cronologia</button>
+              </form>
             </div>
           <table border="1" cellpadding="5">
               <tr>

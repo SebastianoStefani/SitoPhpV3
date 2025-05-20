@@ -121,3 +121,15 @@ footer {
     margin-top: auto;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
+.msg {
+    color: #e74c3c;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #e74c3c;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
